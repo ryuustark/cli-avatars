@@ -37,7 +37,7 @@ Each avatar represents one running agent. It walks on top of your open windows, 
 
 ```bash
 # 1. Clone
-git clone https://github.com/your-username/cli-avatars.git
+git clone https://github.com/ryuustark/cli-avatars.git
 cd cli-avatars
 
 # 2. Install dependencies
