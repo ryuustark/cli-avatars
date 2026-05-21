@@ -1,0 +1,8 @@
+# AI Agent Overlay — requirements
+# pip install -r requirements.txt
+
+pillow>=10.0.0       # Pixel sprite rendering
+pywinctl>=0.4        # Cross-platform window enumeration (optional but recommended)
+psutil>=5.9          # Process info helper (optional)
+numpy>=1.24          # Required by sprite_loader._is_blank() alpha detection
+pystray>=0.19        # System tray icon (show/hide HUD, quit)

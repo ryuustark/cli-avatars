@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+# Keep Sprites/ PNGs in git; exclude any raw JPG sources
+Sprites/*.jpg
+
+# Keep dist/cli_avatars.exe out of git (large binary)
+dist/
+
+# Obsidian context files (this folder lives inside an Obsidian vault)
+.obsidian/
