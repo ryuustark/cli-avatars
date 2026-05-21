@@ -7,10 +7,10 @@ Each avatar represents one running agent. It walks on top of your open windows, 
 ---
 
 <p align="center">
-  <img src="ponmi_preview/ponmi_down_walk.gif" width="96" alt="walk">
-  <img src="ponmi_preview/ponmi_down_type.gif" width="96" alt="type">
-  <img src="ponmi_preview/ponmi_down_read.gif" width="96" alt="read">
-  <img src="ponmi_preview/ponmi_down_idle.gif" width="96" alt="idle">
+  <img src="meowatar_preview/meowatar_walk.gif" width="96" alt="walk">
+  <img src="meowatar_preview/meowatar_type.gif" width="96" alt="type">
+  <img src="meowatar_preview/meowatar_read.gif" width="96" alt="read">
+  <img src="meowatar_preview/meowatar_idle.gif" width="96" alt="idle">
 </p>
 
 <p align="center">
@@ -50,6 +50,7 @@ python overlay.py
 Right-click on screen → **Quit**, or press **ESC**.
 
 ---
+![Main Window for the app]({DE4B6408-288C-46FC-901B-B4045B740688}.png)
 
 ## Controls
 
@@ -65,6 +66,8 @@ Right-click on screen → **Quit**, or press **ESC**.
 ## Skin Picker
 
 Right-click → **Skins** to open the skin picker:
+
+![alt text]({41383BD0-56D3-4D49-B27F-0BB4EB374140}.png)
 
 ```
 [ Agent: caine ▼                    ]
@@ -160,7 +163,8 @@ cli-avatars/
 │   ├── meowatar.png
 │   ├── michimaru.png
 │   └── ponmi.png
-├── ponmi_preview/          ← GIF previews of animations
+├── meowatar_preview/       ← GIF previews of animations
+├── ponmi_preview/          ← Ponmi sprite GIFs
 └── docs/
     ├── adding-sprites.md   ← How to add custom skins
     └── claude-hooks.md     ← How to use the hooks integration
