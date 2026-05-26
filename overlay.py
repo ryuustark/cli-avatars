@@ -38,6 +38,8 @@ from dataclasses import dataclass, field
 from typing import Optional
 from pathlib import Path
 
+VERSION = "0.4"
+
 try:
     import pywinctl as pwc
     HAS_WINCTL = True

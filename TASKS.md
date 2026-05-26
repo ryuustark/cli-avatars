@@ -13,6 +13,23 @@ updated: 2026-05-14
 
 ---
 
+## 🤖 Orchestrator Queue
+
+> Tagged `<!-- ORCHESTRATOR: ready -->` — picked up by nightly orchestrator, one per run.
+> These are small, bounded code tasks. Bubble handles docs (tagged `<!-- BUBBLE: fix -->`).
+
+- [x] Add VERSION constant to overlay.py <!-- ORCHESTRATOR: ready -->
+  - Context: overlay.py has no version constant. The project is at v0.4 per CLAUDE.md and the project note.
+  - Acceptance: Add `VERSION = "0.4"` as a module-level constant near the top of overlay.py (after imports, before class definitions). No other changes.
+  - Guardrail: Only modify overlay.py. Do not change any logic, class, or function. One line added.
+
+- [ ] Add config.json loader stub to overlay.py <!-- ORCHESTRATOR: ready -->
+  - Context: The v0.4 roadmap calls for a config.json with fps, scale, and skins keys. overlay.py has no config loading yet.
+  - Acceptance: Add a `load_config()` function that reads `config.json` from the same directory as overlay.py, returns a dict, and silently returns `{}` if the file is missing. Call it at the start of `OverlayApp.__init__()` and store the result as `self.config`. Do not yet use the config values anywhere else.
+  - Guardrail: Only modify overlay.py. Do not change existing behavior. The overlay must still run correctly if config.json is absent.
+
+---
+
 ## 📝 Documentation & Presentation Trail
 
 > Bubble picks **one** item per run. Do not batch. Each item is one file, one change.
